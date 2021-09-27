@@ -1,0 +1,14 @@
+{
+  "name": "demo-rdspg-source",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "database.hostname": "postgresql",
+    "database.port": "5432",
+    "database.user": "root",
+    "database.password": "root",
+    "database.dbname": "rental",
+    "database.server.name": "debezium_rdspg",
+    "table.whitelist": "public.car",
+    "plugin.name": "wal2json"
+  }
+}
